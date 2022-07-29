@@ -21,13 +21,17 @@ Iniciamos nuestros servicios
 ```
   docker-compose up -d
 ```
+Entramos al contenedr
+```
+docker exec -it store_api bash
+```
 Creamos la base de datos del proyecto
 ```
-  docker-compose exec store_api rails db:create
+  rails db:create
 ```
 Ejecutamos las migraciones del proyecto
 ```
-  docker-compose exec store_api rails db:migrate
+  rails db:migrate
 ```
 ## Services
 * Store api
